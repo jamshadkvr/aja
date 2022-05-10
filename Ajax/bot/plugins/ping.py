@@ -6,7 +6,7 @@ from utils_bot import *
 from Ajax import StartTime
 
 @Client.on_message(filters.command('ajax') & filters.private & ~filters.edited)
-async def stats(bot, update):
+async def ajax(bot, update):
   currentTime = readable_time((time.time() - StartTime))
   botstats = f'<b>Bot Uptime:</b> {currentTime}' 
             
