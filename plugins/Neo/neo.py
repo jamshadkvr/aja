@@ -18,15 +18,12 @@ async def ping(_, message):
     avr = await message.reply_text(
              text="•"
     )
-    await asyncio.sleep(0.5)
     avr1 = await avr.edit_text(
         text="••"
     ) 
-    await asyncio.sleep(0.5)
     avr2 = await avr1.edit_text(
         text="•••"
     )
-    await asyncio.sleep(0.5)
     avr3 = await avr2.edit_text(
         text="••••"
     )  
