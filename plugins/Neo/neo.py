@@ -8,9 +8,9 @@ import heroku3
 import requests
 from pyrogram import Client, filters
 
-#=====================================================
+#━━━━━━━━━━━━━━〔─〕━━━━━━━━━━━━━━
 BOT_START_TIME = time.time()
-#=====================================================
+#━━━━━━━━━━━━━━〔─〕━━━━━━━━━━━━━━
 
 @Client.on_message(filters.command("ping"))
 async def ping(_, message):
