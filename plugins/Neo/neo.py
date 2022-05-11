@@ -19,18 +19,18 @@ async def ping(_, message):
              text="•"
     )
     await asyncio.sleep(0.5)
-    reply2 = await reply1.edit_text(
+    avr1 = await avr.edit_text(
         text="••"
     ) 
     await asyncio.sleep(0.5)
-    reply3 = await reply2.edit_text(
+    avr2 = await avr1.edit_text(
         text="•••"
     )
     await asyncio.sleep(0.5)
-    reply4 = await reply3.edit_text(
+    avr3 = await avr2.edit_text(
         text="••••"
     )
-    await reply4.delete()  
+    await avr3.delete()  
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
     uptime = time.strftime("%HH | %MM | %SS", time.gmtime(time.time() - BOT_START_TIME))   
