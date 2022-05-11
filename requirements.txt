@@ -10,6 +10,5 @@ imdbpy
 heroku3
 datetime
 pynewtonmath
-shutil
-psutil
+
 
