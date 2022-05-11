@@ -26,6 +26,8 @@ async def ping(_, message):
     print('Duration: {}'.format(end_time - start_time))
 
 
+@Client.on_message(filters.command("pong"))
+async def pong(_, message):
 start_time = datetime.now()
 # do your work here
 end_time = datetime.now()
