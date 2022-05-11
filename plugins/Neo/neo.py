@@ -15,18 +15,7 @@ BOT_START_TIME = time.time()
 @Client.on_message(filters.command("ping"))
 async def ping(_, message):
     start_t = time.time()  
-    avr = await message.reply_text(
-             text="•"
-    )
-    avr1 = await avr.edit_text(
-        text="••"
-    ) 
-    avr2 = await avr1.edit_text(
-        text="•••"
-    )
-    avr3 = await avr2.edit_text(
-        text="••••"
-    )  
+    avr = await message.reply_text("‹○○○›")
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
     uptime = time.strftime("%HH | %MM | %SS", time.gmtime(time.time() - BOT_START_TIME))   
