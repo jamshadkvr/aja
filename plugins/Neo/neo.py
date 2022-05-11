@@ -1,5 +1,6 @@
 #@Aadhi000 #Neo #neo
 
+from datetime import datetime
 import asyncio
 import os
 import math
@@ -20,5 +21,12 @@ async def ping(_, message):
     time_taken_s = (end_t - start_t) * 1000
     uptime = time.strftime("%HH | %MM | %SS", time.gmtime(time.time() - BOT_START_TIME))   
     await avr.edit(f"‹ ᴄᴜʀʀᴇɴᴛ ʙᴏᴛ sᴛᴀᴛᴜs ›\n\n‹› ᴘᴏɴɢ : {time_taken_s:.3f} ms\n‹› ʙᴏᴛ ᴜᴘᴛɪᴍᴇ : {uptime}")
-    await asyncio.sleep(10)
-    await avr.delete()
+    start_time = datetime.now()
+    end_time = datetime.now()
+    print('Duration: {}'.format(end_time - start_time))
+
+
+start_time = datetime.now()
+# do your work here
+end_time = datetime.now()
+print('Duration: {}'.format(end_time - start_time))
