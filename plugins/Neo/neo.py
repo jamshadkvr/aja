@@ -27,4 +27,4 @@ async def ping(_, message):
     start_time = datetime.now()
     avr = await message.reply_text("‹○○○›")
     end_time = datetime.now()
-    await avr.edit("'Duration: {}'.format(end_time - start_time)")
+    await avr.edit('Duration: {}'.format(end_time - start_time))
