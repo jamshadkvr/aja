@@ -35,7 +35,7 @@ async def addfilter(client, message):
                 await asyncio.sleep(10)
                 await del.delete()
         else:
-            dd = await message.reply_text("I'm not connected to any groups!", quote=True)
+            bb = await message.reply_text("I'm not connected to any groups!", quote=True)
             return
             await asyncio.sleep(10)
             await dd.delete()
