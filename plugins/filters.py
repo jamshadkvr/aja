@@ -30,7 +30,7 @@ async def addfilter(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                del = await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                ll = await message.reply_text("Make sure I'm present in your group!!", quote=True)
                 return
                 await asyncio.sleep(10)
                 await del.delete()
