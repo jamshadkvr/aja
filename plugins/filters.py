@@ -30,11 +30,15 @@ async def addfilter(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                del = await message.reply_text("Make sure I'm present in your group!!", quote=True)
                 return
+                await asyncio.sleep(10)
+                await del.delete()
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            dd = await message.reply_text("I'm not connected to any groups!", quote=True)
             return
+            await asyncio.sleep(10)
+            await dd.delete()
 
     elif chat_type in ["group", "supergroup"]:
         grp_id = message.chat.id
