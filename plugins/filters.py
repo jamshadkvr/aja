@@ -57,21 +57,27 @@ async def addfilter(client, message):
 
 
     if len(args) < 2:
-        await message.reply_text("Command Incomplete :(", quote=True)
+        sv = await message.reply_text("Command Incomplete :(", quote=True)
+        await asyncio.sleep(10)
+        await sv.delete()
         return
 
     extracted = split_quotes(args[1])
     text = extracted[0].lower()
 
     if not message.reply_to_message and len(extracted) < 2:
-        await message.reply_text("Add some content to save your filter!", quote=True)
+        sd = await message.reply_text("Add some content to save your filter!", quote=True)
+        await asyncio.sleep(10)
+        await sd.delete()
         return
 
     if (len(extracted) >= 2) and not message.reply_to_message:
         reply_text, btn, alert = parser(extracted[1], text)
         fileid = None
         if not reply_text:
-            await message.reply_text("You cannot have buttons alone, give some text to go with it!", quote=True)
+            dr = await message.reply_text("You cannot have buttons alone, give some text to go with it!", quote=True)
+            await asyncio.sleep(10)
+            await dr.delete()
             return
 
     elif message.reply_to_message and message.reply_to_message.reply_markup:
