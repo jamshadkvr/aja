@@ -639,6 +639,9 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="sᴇʟᴇᴄᴛ ғɪʟᴇ ғʀᴏᴍ ᴀʙᴏᴠᴇ ʟɪɴᴋs", callback_data="pages")]
         )
+        btn.append(
+            [InlineKeyboardButton('⚠️ ʜᴏᴡ ᴛᴏ ɪ ᴅᴏᴡɴʟᴏᴀᴅ ❓', url='https://t.me/Files_Store_Link/2')]
+        )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
