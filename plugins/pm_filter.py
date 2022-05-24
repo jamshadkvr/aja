@@ -106,12 +106,18 @@ async def next_page(bot, query):
                                   callback_data="pages"),
              InlineKeyboardButton("‹ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}")]
         )
+        btn.append(
+            [InlineKeyboardButton('⚠️ ʜᴏᴡ ᴛᴏ ɪ ᴅᴏᴡɴʟᴏᴀᴅ ❓', url='https://t.me/Files_Store_Link/2')]
+        )
     elif off_set is None:
         btn.append(
             [
                 InlineKeyboardButton("ᴘᴀɢᴇs", callback_data="pages"),
                 InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
                 InlineKeyboardButton("ɴᴇxᴛ ›", callback_data=f"next_{req}_{key}_{n_offset}")]
+        )
+        btn.append(
+            [InlineKeyboardButton('⚠️ ʜᴏᴡ ᴛᴏ ɪ ᴅᴏᴡɴʟᴏᴀᴅ ❓', url='https://t.me/Files_Store_Link/2')]
         )
     else:
         btn.append(
@@ -120,7 +126,9 @@ async def next_page(bot, query):
                 InlineKeyboardButton(f"{round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
                 InlineKeyboardButton("ɴᴇxᴛ ›", callback_data=f"next_{req}_{key}_{n_offset}")]
         )
-
+        btn.append(
+            [InlineKeyboardButton('⚠️ ʜᴏᴡ ᴛᴏ ɪ ᴅᴏᴡɴʟᴏᴀᴅ ❓', url='https://t.me/Files_Store_Link/2')]
+        )
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
@@ -623,6 +631,9 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton("ᴘᴀɢᴇs", callback_data="pages"),
              InlineKeyboardButton(text=f"1/{round(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="ɴᴇxᴛ ›", callback_data=f"next_{req}_{key}_{offset}")]
+        )
+        btn.append(
+            [InlineKeyboardButton('⚠️ ʜᴏᴡ ᴛᴏ ɪ ᴅᴏᴡɴʟᴏᴀᴅ ❓', url='https://t.me/Files_Store_Link/2')]
         )
     else:
         btn.append(
