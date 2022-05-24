@@ -385,10 +385,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "filep" else False 
                 )
                 msg1 = await query.message.reply(
-                f'<b><i>{query.from_user.mention} Your File Is Ready ✨</i></b>\n\n'
-                f'<b><i>📟 Name : <a href=Https://t.me/PocketMoviesOfficial>{title}</a></i></b>\n\n'
-                f'<b><i>🎗 Size : {size}</b></i>\n\n'
-                '<i>⚡️Click The Below Button For Files.⚡️</i>',
+                f'<b><i>ʜᴇʏ 👋{query.from_user.mention}🥰 📥ʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ ✨</i></b>\n\n'
+                f'<b><i>🎬 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <a href=Https://t.me/PocketMoviesOfficial>{title}</a></i></b>\n\n'
+                f'<b><i>🎗 sɪᴢᴇ : {size}</b></i>\n\n'
+                '<i>⚡️ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ғᴏʀ ғɪʟᴇs.⚡️</i>',
                 True,
                 'html',
                 disable_web_page_preview=True,
@@ -666,7 +666,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b><i>📟 Movie Name : {search}\n👩🏻‍💻 Requested By : {message.from_user.mention}\n🚀 Group : {message.chat.title}</i></b>"
+        cap = f"<b><i>🎬 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : {search}\n👩🏻‍💻 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n🚀 ɢʀᴏᴜᴘ : {message.chat.title}</i></b>"
     if imdb and imdb.get('poster'):
         try:
             fmsg = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
