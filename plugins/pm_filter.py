@@ -393,7 +393,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "filep" else False 
                 )
                 msg1 = await query.message.reply(
-                f'<b><i>ʜᴇʏ 👋{query.from_user.mention}🥰 📥ʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ ✨</i></b>\n\n'
+                f'<b><i>ʜᴇʏ 👋{query.from_user.mention}🥰   📥ʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ ✨</i></b>\n\n'
                 f'<b><i>🎬 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ : <a href=Https://t.me/PocketMoviesOfficial>{title}</a></i></b>\n\n'
                 f'<b><i>🎗 sɪᴢᴇ : {size}</b></i>\n\n'
                 '<i>⚡️ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ғᴏʀ ғɪʟᴇs.⚡️</i>',
@@ -403,10 +403,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url = ms.link)
+                            InlineKeyboardButton("⚠️ᴄᴀɴ'ᴛ ᴀᴄᴄᴇss❓ᴄʟɪᴄᴋ ʜᴇʀᴇ ⚠️", url = f"{CH_LINK}"
                         ],
                         [
-                            InlineKeyboardButton("⚠️ᴄᴀɴ'ᴛ ᴀᴄᴄᴇss❓ᴄʟɪᴄᴋ ʜᴇʀᴇ ⚠️", url = f"{CH_LINK}")
+                            InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url = ms.link))
                         ]
                     ]
                 )
