@@ -403,10 +403,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("⚠️ᴄᴀɴ'ᴛ ᴀᴄᴄᴇss❓ᴄʟɪᴄᴋ ʜᴇʀᴇ ⚠️", url = f"{CH_LINK}"
+                            InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 1 📥", url = f"{CH_LINK}")
                         ],
                         [
-                            InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url = ms.link))
+                            InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 2 📥", url = ms.link)
                         ]
                     ]
                 )
